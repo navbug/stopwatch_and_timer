@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.countdown_timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.countdown_timer div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 25%;
+  height: 50px;
+  border: 1px solid #ccc;
+  padding: .5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  margin: 10px 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.countdown_timer div div:last-child {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 30%;
+  height: 3rem;
+  border: 1px solid #ccc;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.btn--start {
+  background-color: green;
+}
+
+.btn--pause {
+  display: none;
+  background-color: rgb(165, 165, 0);
+}
+
+.btn--reset {
+  background-color: orangered;
+}

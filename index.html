@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/stopwatch-style.css">
+  <title>Stopwatch & Countdown Timer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="countdown_timer">
+      <h2>Countdown Timer</h2>
+      <div>
+        <div>
+          <span>Hours</span>
+          <span>Minutes</span>
+          <span>Seconds</span>
+        </div>
+        <div>
+          <input class="hours" type="number" maxlength="2" placeholder="00">
+          <p>:</p>
+          <input class="minutes" type="number" maxlength="2" placeholder="00" oninput="this.value=this.value.slice(0, this.maxlength)">
+          <p>:</p>
+          <input class="seconds" type="number" maxlength="2" placeholder="00" oninput="this.value=this.value.slice(0, this.maxlength)">
+        </div>
+        <div>
+          <button class="btn btn--start">Start</button>
+          <button class="btn btn--pause">Pause</button>
+          <button class="btn btn--reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Stopwatch -->
+    <div class="container2">
+      <h2>Stopwatch</h2>
+      <div class="stopwatch">
+        <h1 class="stopwatch__time">00:00:00:00</h1>
+        <div class="stopwatch__buttons">
+          <button class="stopwatch__btn stopwatch__btn--stop">Stop</button>
+          <button class="stopwatch__btn stopwatch__btn--start">Start</button>
+          <button class="stopwatch__btn stopwatch__btn--reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/stopwatch-script.js"></script>
+</body>
+
+</html>
